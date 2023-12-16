@@ -15,8 +15,8 @@ public class Main {
                     System.out.print(keyboard.charAt(flag - 2));
                 }
             }
+            System.out.println();
         }
-        System.out.println();
     }
 }
 /*在這段程式碼中，keyboard.indexOf(letter) 用來取得 letter 在 keyboard 字串中的位置。
