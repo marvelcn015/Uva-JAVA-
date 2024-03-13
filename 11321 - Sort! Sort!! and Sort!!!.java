@@ -1,3 +1,6 @@
+//這題還在吃TLE，我很抱歉＞＜
+//至少ZOJ有過...
+
 import java.util.*;
 
 public class Main {
@@ -35,6 +38,5 @@ public class Main {
                 }
             }
         }
-        sc.close();
     }
 }
