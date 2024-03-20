@@ -9,8 +9,8 @@ public class Main {
         for (int set = 1; set <= sets; set++) {
             String line1 = sc.nextLine();
             String line2 = sc.nextLine();
-            int a = Integer.parseInt(line1, 2);
-            int b = Integer.parseInt(line2, 2);
+            int a = BtoD(line1);
+            int b = BtoD(line2);
             int result = GCD(a, b);
 
 
@@ -21,6 +21,18 @@ public class Main {
                 System.out.println("All you need is love!");
             }
         }
+    }
+
+
+    static int BtoD(String line) {
+        int num = 0;
+        for (int i = 0; i < line.length(); i++) {
+            if (line.charAt(i) == '1')
+                num += 1 << (line.length() - 1 - i);
+        }
+
+
+        return num;
     }
 
 
